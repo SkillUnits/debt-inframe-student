@@ -72,6 +72,10 @@
         width: 123px;
         height: 32px;
     }
+
+    header {
+        margin-top: 44px;
+    }
     .card-container p {
         margin-top: 20px;
     }
@@ -109,8 +113,6 @@
     .centered {
         text-align: left;
     }
-
-
 
     .trust {
         max-width: 100%px;
