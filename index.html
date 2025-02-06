@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Debt Free Students</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/style.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="https://usfinancerelief.org/wp-content/uploads/2024/04/cropped-icon-32x32.png"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <script src="scripts/quiz.js"></script>
+        <script src="scripts/swiper.js" type="module"></script>
+    </head>
+    <body>
+        <nav>
+            <div class="nav-container">
+                <img class="logo" src="images/logo.png" alt="" />
+                <a class="nav-button" href="tel:+1xxxxxxxxx">
+                    +1 xxx xxx xxx
+                </a>
+            </div>
+        </nav>
+        <main>
+            <header>
+                <div class="card">
+                    <div class="card-container">
+                        <h1>
+                            Find out how to reduce your student debt by up to
+                            <span class="accent" style="font-weight: 800"
+                                >70%</span
+                            >!
+                        </h1>
+                        <p>
+                            Answer two simple questions, and we’ll help you find
+                            the best solution for your situation
+                        </p>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <img src="images/header-pic.jpg" alt="" />
+                </div>
+            </header>
+            <a href="/" class="call-button">
+                Get started now
+                <div>
+                    <img src="images/phone-icon-p.png" alt="" />
+                </div>
+            </a>
+
+            <section class="quiz-container">
+                <div id="quiz" class="quiz">
+                    <p id="quiz-question" class="quiz-question">
+                        What is the total amount of your student debt?
+                    </p>
+                    <div id="answers">
+                        <button
+                            class="answer-button"
+                            id="btn1"
+                            onclick="nextQuestion()"
+                        >
+                            $10k – $20k
+                        </button>
+                        <button
+                            class="answer-button"
+                            id="btn2"
+                            onclick="nextQuestion()"
+                        >
+                            $20k – $50k
+                        </button>
+                        <button
+                            class="answer-button"
+                            id="btn3"
+                            onclick="nextQuestion()"
+                        >
+                            $50k – $80k
+                        </button>
+                    </div>
+                </div>
+                <div id="result" style="display: none">
+                    You are not approved
+                </div>
+            </section>
+
+            <section>
+                <h2 style="max-width: 500px">
+                    We’ve found
+                    <span class="accent">the best solution</span> to help reduce
+                    your debt!
+                </h2>
+                <p class="centered" style="max-width: 530px">
+                    Start your journey to
+                    <span class="accent">to a debt-free life</span> today. Take
+                    the first step toward financial freedom with our proven
+                    program. 
+                </p>
+                <a href="/" class="call-button">
+                    Get started now
+                    <div>
+                        <img src="images/phone-icon-p.png" alt="" />
+                    </div>
+                </a>
+            </section>
+
+            <section>
+                <h2 style="max-width: 610px">
+                    <span class="accent">Thousands of students</span> have
+                    trusted us with their finances and changed their lives
+                </h2>
+                <div class="feedbacks-container">
+                    <div class="feedback">
+                        <div class="feedback-container">
+                            <div class="feedback-author">
+                                <img
+                                    src="images/Emma.png"
+                                    alt=""
+                                    width="60"
+                                    height="60"
+                                    loading="lazy"
+                                />
+                                <p>Emma, 21, New York</p>
+                            </div>
+                            <p class="feedback-content">
+                                My student debt of $35,000 seemed impossible to
+                                manage 😣. My monthly payments took up my entire
+                                paycheck, and I couldn’t afford even basic
+                                necessities. After a consultation, my debt was
+                                reduced by 60%, and now I can finally focus on
+                                my education and my future 🌟.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feedback">
+                        <div class="feedback-container">
+                            <div class="feedback-author">
+                                <img
+                                    src="images/Liam.png"
+                                    alt=""
+                                    width="60"
+                                    height="60"
+                                    loading="lazy"
+                                />
+                                <p>Liam, 23, Texas</p>
+                            </div>
+                            <p class="feedback-content">
+                                My $50,000 in student loans was a massive burden
+                                😞. I worked two jobs but still couldn’t make
+                                ends meet. One call to this program changed
+                                everything—they reduced my debt to $20,000. I no
+                                longer live in constant stress 😌 and have
+                                finally started building my career🚀.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feedback">
+                        <div class="feedback-container">
+                            <div class="feedback-author">
+                                <img
+                                    src="images/Sophia.png"
+                                    alt=""
+                                    width="60"
+                                    height="60"
+                                    loading="lazy"
+                                />
+                                <p>Sophia, 25, California</p>
+                            </div>
+                            <p class="feedback-content">
+                                I took out a $28,000 loan for my studies and had
+                                no idea how I’d repay it after graduation. This
+                                program reduced my debt to $10,500 😱. Now, I
+                                can plan my life without fear of the future 🦾.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="feedback">
+                                <div class="feedback-container">
+                                    <div class="feedback-author">
+                                        <img
+                                            src="images/Emma.png"
+                                            alt=""
+                                            width="60"
+                                            height="60"
+                                            loading="lazy"
+                                        />
+                                        <p>Emma, 21, New York</p>
+                                    </div>
+                                    <p class="feedback-content">
+                                        My student debt of $35,000 seemed impossible to
+                                        manage 😣. My monthly payments took up my entire
+                                        paycheck, and I couldn’t afford even basic
+                                        necessities. After a consultation, my debt was
+                                        reduced by 60%, and now I can finally focus on
+                                        my education and my future 🌟.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="feedback">
+                                <div class="feedback-container">
+                                    <div class="feedback-author">
+                                        <img
+                                            src="images/Liam.png"
+                                            alt=""
+                                            width="60"
+                                            height="60"
+                                            loading="lazy"
+                                        />
+                                        <p>Liam, 23, Texas</p>
+                                    </div>
+                                    <p class="feedback-content">
+                                        My $50,000 in student loans was a massive burden
+                                        😞. I worked two jobs but still couldn’t make
+                                        ends meet. One call to this program changed
+                                        everything—they reduced my debt to $20,000. I no
+                                        longer live in constant stress 😌 and have
+                                        finally started building my career🚀.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="feedback">
+                                <div class="feedback-container">
+                                    <div class="feedback-author">
+                                        <img
+                                            src="images/Sophia.png"
+                                            alt=""
+                                            width="60"
+                                            height="60"
+                                            loading="lazy"
+                                        />
+                                        <p>Sophia, 25, California</p>
+                                    </div>
+                                    <p class="feedback-content">
+                                        I took out a $28,000 loan for my studies and had
+                                        no idea how I’d repay it after graduation. This
+                                        program reduced my debt to $10,500 😱. Now, I
+                                        can plan my life without fear of the future 🦾.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Why You Can Trust Us:</h2>
+                <div class="trust-cards-container">
+                    <div class="trust card">
+                        <div class="card-container">
+                            <h2 class="trust-card-title">
+                                🫂 Over 25,000 satisfied students
+                            </h2>
+                            <p class="trust-card-content">
+                                We’ve helped thousands of young people regain
+                                financial stability.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="trust card">
+                        <div class="card-container">
+                            <h2 class="trust-card-title">
+                                🎯 Personalized solutions
+                            </h2>
+                            <p class="trust-card-content">
+                                We assess your unique situation and provide the
+                                best path forward.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="trust card">
+                        <div class="card-container">
+                            <h2 class="trust-card-title">
+                                🛡️Preservation of your credit score
+                            </h2>
+                            <p class="trust-card-content">
+                                We ensure your credit score remains unaffected
+                                throughout the process.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="trust card">
+                        <div class="card-container">
+                            <h2 class="trust-card-title">
+                                🚀 Fast and effective results
+                            </h2>
+                            <p class="trust-card-content">
+                                Most students see significant debt reductions
+                                after just one call.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 style="max-width: 763px">
+                    Don’t put off solving your debt problems! Start your path to
+                    <span class="accent">financial freedom</span> today.
+                </h2>
+                <a href="/" class="call-button">
+                    Call now
+                    <div>
+                        <img src="images/phone-icon-p.png" alt="" />
+                    </div>
+                </a>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-top">
+                <a href="privacy-policy/index.html">Privacy Policy</a>
+                <a href="terms-of-service/index.html">Terms of service</a>
+            </div>
+            <div class="footer-bottom">
+                Get in touch with us:
+                <u
+                    ><span class="accent" style="font-weight: 400"
+                        >freefromdebt@gmail.com</span
+                    ></u
+                >
+            </div>
+        </footer>
+    </body>
+</html>
